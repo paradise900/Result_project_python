@@ -1,0 +1,99 @@
+<html>
+<head>
+    <title>Car Details</title>
+</head>
+{% block body %}
+<div class="container mt-5">
+    <form method="post">
+        <label for="symboling">Symboling:</label>
+        <select name="symboling">
+            <option value="-1">-1</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <label for="company_name">Company Name:</label>
+        <select name="company_name">
+            <option value="audi">Audi</option>
+            <option value="bmw">bmw</option>
+            <option value="buick">buick</option>
+            <option value="chevrolet">chevrolet</option>
+            <option value="dodge">dodge</option>
+            <option value="honda">honda</option>
+            <option value="isuzu">isuzu</option>
+            <option value="jaguar">jaguar</option>
+            <option value="mazda">mazda</option>
+            <option value="mercury">mercury</option>
+            <option value="mitsubishi">mitsubishi</option>
+            <option value="nissan">nissan</option>
+            <option value="peugeot">peugeot</option>
+            <option value="plymouth">plymouth</option>
+            <option value="porsche">porsche</option>
+            <option value="renault">renault</option>
+            <option value="saab">saab</option>
+            <option value="subaru">subaru</option>
+            <option value="toyota">toyota</option>
+            <option value="volkswagen">volkswagen</option>
+            <option value="volvo">volvo</option>
+        </select>
+        <textarea name="horsepower" id="horsepower" class="form-control" placeholder="Horsepower"></textarea><br>
+        <textarea name="city_mpg" id="city_mpg" class="form-control" placeholder="City_mpg"></textarea><br>
+        <label for="fuel_type">fuel_type:</label>
+        <select name="fuel_type">
+            <option value="gas">gas</option>
+            <option value="diesel">diesel</option>
+        </select>
+        <label for="aspiration">aspiration:</label>
+        <select name="aspiration">
+            <option value="std">std</option>
+            <option value="turbo">turbo</option>
+        </select>
+        <label for="door_number">door_number:</label>
+        <select name="door_number">
+            <option value="two">two</option>
+            <option value="four">four</option>
+        </select>
+        <label for="drive_wheel">drive_wheel:</label>
+        <select name="drive_wheel">
+            <option value="4wd">4wd</option>
+            <option value="fwd">fwd</option>
+            <option value="rwd">rwd</option>
+        </select>
+        <label for="engine_location">engine_location:</label>
+        <select name="engine_location">
+            <option value="front">front</option>
+            <option value="rear">rear</option>
+        </select>
+        <label for="engine_type">engine_type:</label>
+        <select name="engine_type">
+            <option value="dohc">dohc</option>
+            <option value="dohcv">dohcv</option>
+            <option value="l">l</option>
+            <option value="ohc">ohc</option>
+            <option value="ohcf">ohcf</option>
+            <option value="ohcv">ohcv</option>
+            <option value="rotor">rotor</option>
+        </select>
+        <label for="cylinder_number">cylinder_number:</label>
+        <select name="cylinder_number">
+            <option value="two">two</option>
+            <option value="three">three</option>
+            <option value="four">four</option>
+            <option value="five">five</option>
+            <option value="six">six</option>
+            <option value="eight">eight</option>
+            <option value="twelve">twelve</option>
+        </select>
+        <textarea name="wheel_base" id="wheel_base" class="form-control" placeholder="wheel_base"></textarea><br>
+        <label for="car_body">car_body:</label>
+        <select name="car_body">
+            <option value="hardtop">hardtop</option>
+            <option value="hatchback">hatchback</option>
+            <option value="sedan">sedan</option>
+            <option value="wagon">wagon</option>
+        </select>
+        <input type="submit" class="btn btn-success" value="Отправить">
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% block title %}
+{{ car.company_name }}
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h1>{{ car.company_name }}</h1>
+    <h1>{{ price }}</h1>
+    <h2>{{ car.symboling }}</h2>
+    <h2>{{ car.horsepower }}</h2>
+    <h2>{{ car.city_mpg }}</h2>
+    <h2>{{ car.fuel_type }}</h2>
+    <h2>{{ car.aspiration }}</h2>
+    <h2>{{ car.door_number }}</h2>
+    <h2>{{ car.drive_wheel }}</h2>
+    <h2>{{ car.engine_location }}</h2>
+    <h2>{{ car.engine_type }}</h2>
+    <h2>{{ car.cylinder_number }}</h2>
+    <h2>{{ car.wheel_base }}</h2>
+    <h2>{{ car.car_body }}</h2>
+
+</div>
+{% endblock %}
