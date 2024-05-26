@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a4a3a3;
+        }
+        .header {
+            background-image: url('/static/images/filter.jpg');
+            background-size: contain;
+            background-position: center;
+            padding: 1em;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            margin-bottom: 100px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        label {
+            flex-direction: column;
+            align-items: left;
+            margin-bottom: 10px;
+            width: 700%;
+        }
+
+        select, textarea {
+            width: 700%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        .btn-success {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            background-color: #434747;
+            color: white;
+            font-size: 18px;
+            border: none;
+        }
+
+        .btn-success:hover {
+            background-color: #747476;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        @media (max-width: 768px) {
+            select, textarea, .btn {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div style="position: absolute; top: 20px; right: 20px;">
+            <a href="/"><button>Главная страница</button></a>
+    </div>
+    <div class="header" style="background-image: url('/static/images/filter.jpg');">
+        <h1>Выбери параметры машин и узнай ее стоимость</h1>
+    </div>
+    <div class="container mt-5">
+        <form method="post">
+            <div class="form-group">
+                <label for="symboling">Безопасность:</label>
+                <select name="symboling">
+                    <option value="-1">-1</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="company_name">Марка автомобиля:</label>
+                <select name="company_name">
+                    <option value="audi">Audi</option>
+                    <option value="bmw">bmw</option>
+                    <option value="buick">buick</option>
+                    <option value="chevrolet">chevrolet</option>
+                    <option value="dodge">dodge</option>
+                    <option value="honda">honda</option>
+                    <option value="isuzu">isuzu</option>-->
+                    <option value="jaguar">jaguar</option>
+                    <option value="mazda">mazda</option>
+                    <option value="mercury">mercury</option>
+                    <option value="mitsubishi">mitsubishi</option>
+                    <option value="nissan">nissan</option>
+                    <option value="peugeot">peugeot</option>
+                    <option value="plymouth">plymouth</option>
+                    <option value="porsche">porsche</option>
+                    <option value="renault">renault</option>
+                    <option value="saab">saab</option>
+                    <option value="subaru">subaru</option>
+                    <option value="toyota">toyota</option>
+                    <option value="volkswagen">volkswagen</option>
+                    <option value="volvo">volvo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="horsepower">Мощность:</label>
+                <textarea name="horsepower" id="horsepower" class="form-control" placeholder="от 49 до 1700"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="city_mpg">Расход топлива в городе:</label>
+                <textarea name="city_mpg" id="city_mpg" class="form-control" placeholder="от 2 до 45"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="fuel_type">Тип топлива:</label>
+                <select name="fuel_type">
+                    <option value="gas">gas</option>
+                    <option value="diesel">diesel</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="aspiration">Наличие турбины:</label>
+                <select name="aspiration">
+                    <option value="std">std</option>
+                    <option value="turbo">turbo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="door_number">Количество дверей:</label>
+                <select name="door_number">
+                    <option value="two">two</option>
+                    <option value="four">four</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="drive_wheel">Привод:</label>
+                <select name="drive_wheel">
+                    <option value="4wd">4wd</option>
+                    <option value="fwd">fwd</option>
+                    <option value="rwd">rwd</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="engine_location">Расположение двигателя:</label>
+                <select name="engine_location">
+                    <option value="front">front</option>
+                    <option value="rear">rear</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="engine_type">Тип двигателя:</label>
+                <select name="engine_type">
+                    <option value="dohc">dohc</option>
+                    <option value="dohcv">dohcv</option>
+                    <option value="l">l</option>
+                    <option value="ohc">ohc</option>
+                    <option value="ohcf">ohcf</option>
+                    <option value="ohcv">ohcv</option>
+                    <option value="rotor">rotor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cylinder_number">Количество цилиндров:</label>
+                <select name="cylinder_number">
+                    <option value="two">two</option>
+                    <option value="three">three</option>
+                    <option value="four">four</option>
+                    <option value="five">five</option>
+                    <option value="six">six</option>
+                    <option value="eight">eight</option>
+                    <option value="twelve">twelve</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="wheel_base">Размер колесной базы:</label>
+                <textarea name="wheel_base" id="wheel_base" class="form-control" placeholder="Размер колесной базы"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="car_body">Тип кузова:</label>
+                <select name="car_body">
+                    <option value="hardtop">hardtop</option>
+                    <option value="hatchback">hatchback</option>
+                    <option value="sedan">sedan</option>
+                    <option value="wagon">wagon</option>
+                </select>
+            </div>
+            <input type="submit" class="btn btn-success" value="Отправить">
+        </form>
+    </div>
+</body>
+</html>
