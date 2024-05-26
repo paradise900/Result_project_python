@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a4a3a3;
+        }
+        .header {
+            background-image: url('/static/images/main_2.jpg');
+            background-size: contain;
+            background-position: center;
+            padding: 1em;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+
+        .header h1 {
+            font-size: 48px;
+            font-family: 'Verdana', sans-serif;
+            margin-bottom: 0.01em;
+        }
+
+        .header p {
+            margin-bottom: 0.1em;
+            font-size: 1.5em;
+            font-family: 'Verdana', monospace;
+        }
+
+        .subtext {
+            font-size: 0.8em;
+            font-family: 'Verdana', monospace;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+        }
+        .content .info {
+            width: 48%;
+            font-family: 'Verdana', monospace;
+            font-size: 30px
+        }
+        .content .image {
+            width: 50%;
+            background-image: url('/static/images/mers.jpg');
+            background-size: cover;
+            height: 500px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;
+
+        }
+        .footer .image {
+            width: 50%;
+            background-image: url('/static/images/porshe.jpg');
+            background-size: cover;
+            height: 500px;
+        }
+        .footer .button {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #434747;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            
+        }
+        .button:hover {
+            background-color: #747476;
+        }
+    </style>
+</head>
+<body>
+    <div style="position: absolute; top: 20px; right: 20px;">
+        <a href="/"><button>Главная страница</button></a>
+        <a href="/all_cars"><button>История запросов</button></a>
+    </div>
+    <div class="header" style="background-image: url('/static/images/main_2.jpg');">
+        <h1>NeuroAuto Assess</h1>
+        <p class="subtext">Управляй своей мечтой</p>
+    </div>
+
+    <div class="content">
+        <div class="info">
+            <p>При продаже автомобиля важно грамотно оценить его стоимость, 
+                чтобы получить справедливую цену и сделку, выгодную как для покупателя, 
+                так и для продавца. Учитывайте такие факторы, как текущее состояние автомобиля, 
+                пробег, комплектация, история обслуживания, рыночная цена аналогичных моделей, 
+                а также популярность и спрос на конкретную марку и модель. Грамотное 
+                определение цены поможет быстрее найти покупателя и заключить успешную сделку.</p>
+        </div>
+        <div class="image" style="background-image: url('/static/images/mers.jpg');">
+]
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="image" style="background-image: url('/static/images/porshe.jpg');">
+
+        </div>
+            <a href="/filter" class="button"> <h1>Search</h1> </a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
