@@ -7,13 +7,13 @@
 ## Установка
 У вас должны быть установлены следующие библиотеки:
 
-```flask```
+```pip install flask```
 
-```flask_sqlalchemy```
+```pip install flask_sqlalchemy```
 
 1. Клонирование репозитория 
 
-```git clone https://github.com/OkulusDev/Oxygen.git```
+```git clone https://github.com/paradise900/result_project_python.git```
 
 2. Переход в директорию NeuroAuto
 
